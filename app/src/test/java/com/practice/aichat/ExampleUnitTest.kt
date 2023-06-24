@@ -1,4 +1,4 @@
-package com.practice.aichat
+package com.practice.AIChat
 
 import org.junit.Test
 
