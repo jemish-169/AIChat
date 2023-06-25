@@ -1,6 +1,3 @@
 <resources>
-    <string name="app_name">ChatGptBot</string>
-
-    <string name="chat_message_loading">AI is typing…</string>
-    <string name="chat_message_error">An error happened. Click here to retry</string>
+    <string name="app_name">AIChat</string>
 </resources>
