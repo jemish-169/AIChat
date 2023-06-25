@@ -5,6 +5,7 @@ import com.practice.AIChat.di.chatModule
 import com.practice.AIChat.di.networkModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
+import org.koin.core.context.startKoin
 
 class ChatGptBotApplication : Application() {
 
