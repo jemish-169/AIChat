@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="12dp"
                 android:gravity="center"
-                android:text="Choose a bot"
+                android:text="Select a bot"
                 android:textColor="#12B694"
                 android:textSize="22sp"
                 android:textStyle="bold" />
@@ -33,47 +33,25 @@
             <RadioGroup
                 android:id="@+id/radioGroup"
                 android:layout_width="wrap_content"
+                android:layout_marginHorizontal="5dp"
                 android:layout_height="wrap_content">
-
-                <RadioButton
-                    android:id="@+id/button0"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:text="Google Search"
-                    android:textSize="18dp" />
 
                 <RadioButton
                     android:id="@+id/button1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:text="text-davinci-003"
+                    android:text="GPT-3"
                     android:textSize="18sp" />
 
                 <RadioButton
-                    android:id="@+id/button2"
+                    android:id="@+id/button0"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:text="text-curie-001"
+                    android:text="Google"
                     android:textSize="18dp" />
 
-                <RadioButton
-                    android:id="@+id/button3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:text="text-babbage-001"
-                    android:textSize="18dp" />
-
-                <RadioButton
-                    android:id="@+id/button4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:text="text-ada-001"
-                    android:textSize="18dp" />
             </RadioGroup>
 
             <LinearLayout

@@ -4,6 +4,6 @@
     <item
         android:id="@+id/app_bar_settings"
         android:icon="@drawable/settings_24"
-        android:title="Select version"
+        android:title="Select Bot"
         app:showAsAction="never" />
 </menu>
