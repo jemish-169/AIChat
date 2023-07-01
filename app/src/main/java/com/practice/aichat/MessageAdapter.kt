@@ -1,12 +1,16 @@
 package com.Practice.AIChat
 
+import android.os.Build
+import android.text.Html
+import android.text.Spanned
+import android.text.method.LinkMovementMethod
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
-import com.example.easychatgpt.R
 
 class MessageAdapter(private val messageList: List<Message>) : RecyclerView.Adapter<MessageAdapter.MyViewHolder>() {
 
@@ -15,6 +19,7 @@ class MessageAdapter(private val messageList: List<Message>) : RecyclerView.Adap
         return MyViewHolder(chatView)
     }
 
+    @RequiresApi(Build.VERSION_CODES.N)
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val message = messageList[position]
         if (message.sentBy == Message.SENT_BY_ME) {
@@ -22,6 +27,7 @@ class MessageAdapter(private val messageList: List<Message>) : RecyclerView.Adap
             holder.rightChatView.visibility = View.VISIBLE
             holder.rightTextView.text = message.message
         } else {
+            holder.leftTextView.movementMethod = LinkMovementMethod.getInstance()
             holder.rightChatView.visibility = View.GONE
             holder.leftChatView.visibility = View.VISIBLE
             holder.leftTextView.text = message.message
