@@ -24,9 +24,6 @@ android {
         buildConfigField "String", "GPT_API_KEY", "\"${properties.getProperty("GPT_API_KEY")}\""
         buildConfigField "String", "GOOGLE_API_KEY", "\"${properties.getProperty("GOOGLE_API_KEY")}\""
 
-//        buildConfingField "String", "GOOGLE_API_KEY", "\"${properties.getProperty("GOOGLE_API_KEY")}\""
-//        buildConfingField "String", "GPT_API_KEY", "\"${properties.getProperty("GPT_API_KEY")}\""
-//        buildConfingField "String", "CX", "\"${properties.getProperty("CX")}\""
     }
 
     buildTypes {
